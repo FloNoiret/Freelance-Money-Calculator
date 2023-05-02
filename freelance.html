@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1> Freelance Money Calculator</h1>
+    </header>
+
+<section>
+    <form class="formcalcul" id="formCalculGain">
+        <div class="calcul pricing"> <!--Ici les prix-->
+            <fieldset class="form-container">
+                <legend>Vos tarifs</legend>
+                <div class="formfield">
+                    <label> TH </label>
+                    <input type="number" name="th" placeholder=" ex: 70">
+                </div>
+                <div class="formfield">
+                    <label> TJM</label>
+                    <input type="number" name="tjm" placeholder=" ex: 490">
+                </div>
+                <div class="formfield">
+                    <label>EXTRAS</label>
+                    <input class="formfields" type="number" name="extra" placeholder=" ex: 47">
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div class="calcul qte"> <!--Ici les quantités-->
+
+            <fieldset class="form-container">
+                <legend>Quantité</legend>
+                <div class="formfield">
+                    <label> TH </label>
+                    <input type="number" name="qteth" placeholder=" ex: 70">
+                </div>
+                <div class="formfield">
+                    <label> TJM</label>
+                    <input type="number" name="qtetjm" placeholder=" ex: 490">
+                </div>
+                <div class="formfield">
+                    <label> EXTRA</label>
+                    <input type="number" name="qteextra" placeholder=" ex: 47">
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="calcul fees"> <!--Ici les charges-->
+            <fieldset class="form-container">
+                <legend>Charges</legend>
+                <div> 
+                    <div class="formfield">
+                        <label> Charges</label>
+                        <input type="number" name="charges" placeholder=" ex: 7">
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <div class="calcul validation">
+            <button onclick="CalculGain()" id="buttonValidation" type="button"> Calculer</button>
+        </div>
+
+        <div class="sectionCalcul result">
+            <h2>Résultats</h2>
+            <div class="form-container">
+                <div class="resultDiv resultBrut">
+                    <p>BRUT</p>
+                    <span id="resultatBrut">0€</span>
+                </div>
+                <div class="resultDiv resultDifference">
+                    <p>Taxes</p>
+                    <span id="resultatDifference">0€</span>
+                </div>
+                <div class="resultDiv resultNet">
+                    <p>NET</p>
+                    <span id="resultatNet">0€</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+    <script src="main.js"></script>
+</body>
+
+</html>
